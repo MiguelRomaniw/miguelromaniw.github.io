@@ -25,7 +25,7 @@ function escreverTexto(element, texto, indexText) {
     }
     
     if(indexText == texto.length -1 & IndexGeral == backup.length){
-      console.log(indexText)
+
       colocarRemoverClasses(".text-apresentacao", "add", "scale-out");
       setTimeout(()=>{
         colocarRemoverClasses(".portifolio-trabalhos", "remove", "d-none");
@@ -55,10 +55,8 @@ async function animacao (clas, animation, temp) {
       setTimeout(() => {
         elementos[i].classList.remove("d-none");
         elementos[i].classList.add(animation);
-        console.log(elementos.length)
         if(i == elementos.length -1){
           colocarRemoverClasses("#footer-portifolio", "remove", "portifolio-footer", "position-fixed")
-          console.log(i)
           
         }
         resolve();
